@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Flask Website</title>
+
+</head>
+<body>
+    <h1>Welcome to My Flask Website!</h1>
+    <p>This is a simple Flask web page.</p> 
+    <div class="Dietary_Restrictions">    
+        <form action="/reccomendations" method="post">
+            <!-- Additional dietary restrictions -->
+            <label for="Egg" class="diet-button">
+                <input type="checkbox" class="d-none" id="Egg">
+                <span class="btn btn-outline-primary">Egg-Free</span>
+            </label>
+            <label for="Milk" class="diet-button">
+                <input type="checkbox" class="d-none" id="Milk">
+                <span class="btn btn-outline-primary">Milk-Free</span>
+            </label>
+            <label for="Soy" class="diet-button">
+                <input type="checkbox" class="d-none" id="Soy">
+                <span class="btn btn-outline-primary">Soy-Free</span>
+            </label>
+            <label for="Sulfites" class="diet-button">
+                <input type="checkbox" class="d-none" id="Sulfites">
+                <span class="btn btn-outline-primary">Sulfites-Free</span>
+            </label>
+            <label for="Sesame" class="diet-button">
+                <input type="checkbox" class="d-none" id="Sesame">
+                <span class="btn btn-outline-primary">Sesame-Free</span>
+            </label>
+            <label for="Mustard" class="diet-button">
+                <input type="checkbox" class="d-none" id="Mustard">
+                <span class="btn btn-outline-primary">Mustard-Free</span>
+            </label>
+            <label for="Gluten" class="diet-button">
+                <input type="checkbox" class="d-none" id="Gluten">
+                <span class="btn btn-outline-primary">Gluten-Free</span>
+            </label>
+            <label for="Wheat" class="diet-button">
+                <input type="checkbox" class="d-none" id="Wheat">
+                <span class="btn btn-outline-primary">Wheat-Free</span>
+            </label>
+            <br>
+            <!-- Tree nuts options -->
+            <label for="Treenuts(Cashews)" class="diet-button">
+                <input type="checkbox" class="d-none" id="Treenuts(Cashews)">
+                <span class="btn btn-outline-primary">Cashew-Free</span>
+            </label>
+            <label for="Treenuts(Almonds)" class="diet-button">
+                <input type="checkbox" class="d-none" id="Treenuts(Almonds)">
+                <span class="btn btn-outline-primary">Almond-Free</span>
+            </label>
+            <label for="Treenuts(Pecans)" class="diet-button">
+                <input type="checkbox" class="d-none" id="Treenuts(Pecans)">
+                <span class="btn btn-outline-primary">Pecan-Free</span>
+            </label>
+            <br>
+            <!-- Fish options -->
+            <label for="Fish(Anchovy)" class="diet-button">
+                <input type="checkbox" class="d-none" id="Fish(Anchovy)">
+                <span class="btn btn-outline-primary">Anchovy-Free</span>
+            </label>
+            <label for="Fish(Cod)" class="diet-button">
+                <input type="checkbox" class="d-none" id="Fish(Cod)">
+                <span class="btn btn-outline-primary">Cod-Free</span>
+            </label>
+            <label for="Fish(Salmon)" class="diet-button">
+                <input type="checkbox" class="d-none" id="Fish(Salmon)">
+                <span class="btn btn-outline-primary">Salmon-Free</span>
+            </label>
+            <br>
+            <!-- More dietary preferences -->
+            <label for="HalalProtein" class="diet-button">
+                <input type="checkbox" class="d-none" id="HalalProtein">
+                <span class="btn btn-outline-primary">Halal Protein</span>
+            </label>
+            <label for="Vegetarian2" class="diet-button">
+                <input type="checkbox" class="d-none" id="Vegetarian2">
+                <span class="btn btn-outline-primary">Vegetarian</span>
+            </label>
+            <label for="Vegan2" class="diet-button">
+                <input type="checkbox" class="d-none" id="Vegan2">
+                <span class="btn btn-outline-primary">Vegan</span>
+            </label>
+            <label for="MadeWithoutGluten" class="diet-button">
+                <input type="checkbox" class="d-none" id="MadeWithoutGluten">
+                <span class="btn btn-outline-primary">Made Without Gluten</span>
+            </label>
+            <br>
+            <!-- Environmental options -->
+            <label for="LowGHGEmis" class="diet-button">
+                <input type="checkbox" class="d-none" id="LowGHGEmis">
+                <span class="btn btn-outline-primary">Low GHG Emissions</span>
+            </label>
+            <label for="MediumGHGEmissions" class="diet-button">
+                <input type="checkbox" class="d-none" id="MediumGHGEmissions">
+                <span class="btn btn-outline-primary">Medium GHG Emissions</span>
+            </label>
+            <label for="HighGHGEmissions" class="diet-button">
+                <input type="checkbox" class="d-none" id="HighGHGEmissions">
+                <span class="btn btn-outline-primary">High GHG Emissions</span>
+            </label>
+            <br>
+            <input type="number" id="Cost" name="Cost?" step="0.01" min="0" required>
+            <br>
+        <button type="submit">Confirm Preferences</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Full jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+    

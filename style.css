@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif; /* Use a clean, professional font */
+    background-image: url('path/to/your/image.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    color: #343a40; /* Dark text color */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add some padding around the body */
+}
+
+.Dietary_Restrictions {
+    display: flex;
+    flex-wrap: wrap; /* Allow checkboxes to wrap onto multiple lines */
+    justify-content: center; /* Center the lines of checkboxes */
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 50px auto; /* Center the container on the page */
+    padding: 20px; /* Add padding for better spacing */
+    border: 1px solid #ced4da; /* Light border around the container */
+    border-radius: 8px; /* Slightly rounded corners */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.diet-button {
+    cursor: pointer;
+    display: inline-block; /* Corrected from inline-black to inline-block */
+    margin: 10px; /* Add spacing between buttons */
+}
+
+.diet-button .btn {
+    width: 150px; /* Set a fixed width for consistency */
+    text-align: center;
+    display: block;  
+    padding: 10px; /* Add padding for better button size */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #ffffff; /* Button background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+}
+
+.diet-button .btn:hover {
+    background-color: #007bff; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.diet-button input:checked + .btn {
+    background-color: #343a40; /* Dark background for checked button */
+    color: white; /* White text */
+}

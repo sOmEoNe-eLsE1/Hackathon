@@ -1,0 +1,45 @@
+/* Basic reset for padding/margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Background placeholder */
+body {
+    background-color: #1e5631;  /* A little dark green */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main logo styling */
+.primary-logo {
+    position: absolute;
+    width: 300px; /* Adjust size as needed */
+    opacity: 0;
+}
+
+/* Top left logo */
+.smaller-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Adjust size as needed */
+    opacity: 0;
+}
+
+
+
+.button-container {
+    display: flex;
+    margin-top: 10%;  /* Adjusts the space above the button */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
